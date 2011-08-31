@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.nowherenearithaca.preference">
+
+	<com.nowherenearithaca.preference.ResetAllPreferencesPreference
+		android:title="@string/pref.title.resetValues" 
+		android:summary="@string/pref.title.resetValues.summary"
+		android:key="@string/pref.resetAllPreferencesPreference.key" />
+
+		<com.nowherenearithaca.preference.CheckboxPreferenceWithReset
+			android:title="@string/pref.samplecheckbox.title"
+			android:key="@string/pref.samplecheckbox.key"
+			android:defaultValue="@string/pref.samplecheckbox.default"
+			android:summary="@string/pref.samplecheckbox.summary"/>
+
+		<com.nowherenearithaca.preference.ColorPickerPreferenceWithReset
+			android:title="@string/pref.samplecolorpicker.title" 
+			android:key="@string/pref.samplecolorpicker.key"
+			android:defaultValue="@string/pref.samplecolorpicker.default"
+			android:summary="@string/pref.samplecolorpicker.summary"
+			android:widgetLayout="@layout/colorpreference_swatch"/>
+
+		<com.nowherenearithaca.preference.SeekBarPreferenceWithReset
+			android:key="@string/pref.sampleseekbar.key"
+			android:title="@string/pref.sampleseekbar.title"
+			android:summary="" 
+			android:dialogMessage="@string/pref.sampleseekbar.title"
+			android:defaultValue="@string/pref.sampleseekbar.default"
+			app:max="@string/pref.sampleseekbar.max" 
+			app:min="@string/pref.sampleseekbar.min"
+			app:summaryPrefix="@string/pref.current.value.is" />
+
+		<com.nowherenearithaca.preference.EditTextPreferenceWithReset
+			android:id="@+id/pref.sampleedittext" 
+			android:title="@string/pref.sampleedittext.title"
+			android:key="@string/pref.sampleedittext.key"
+			android:defaultValue="@string/pref.sampleedittext.default"
+			android:singleLine="true"
+			app:summaryPrefix="@string/pref.current.textvalue.is"/>
+
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+This is a small project demonstrating some simple tweaks of Android Preferences you may find useful.
+
+In particular:
+
+* add a "Reset to Default" button that appears next to widget in Preference screen if value is different from default; 
+implemented for checkbox, seekbar, (tweaked) color picker, and text preference
+* add "Reset all Preferences to Default" functionality
+* tweaks on color picker from Android graphics demo

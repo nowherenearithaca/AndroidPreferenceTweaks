@@ -1,0 +1,6 @@
+
+*.class
+*.ap_
+*.dex
+bin/**/*
+gen/**/*

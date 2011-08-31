@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.lyonstuff.justpickit">
+
+	<bfl.bfl.custompreferences.ResetAllPreferencesPreference
+		android:title="@string/pref.title.resetValues" android:summary="@string/pref.title.resetValues.summary"
+		android:key="@string/pref.resetAllPreferencesPreference.key" />
+
+		<bfl.bfl.custompreferences.PickItCheckboxPreference
+			android:title="@string/pref.title.EnableVoiceRecognition"
+			android:key="@string/pref.EnableVoiceRecognition.key"
+			android:defaultValue="@string/pref.EnableVoiceRecognition.default"
+			android:summary="@string/pref.title.EnableVoiceRecognition.summary"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<bfl.bfl.custompreferences.PickItCheckboxPreference
+			android:title="@string/pref.ShowSayItButton.title"
+			android:key="@string/pref.ShowSayItButton.key"
+			android:defaultValue="@string/pref.ShowSayItButton.default"
+			android:summary="@string/pref.ShowSayItButton.summary"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<bfl.bfl.custompreferences.PickItCheckboxPreference android:key="acra.disable"
+		        android:title="@string/pref_disable_acra"
+		        android:summaryOn="@string/pref_acra_disabled"
+		        android:summaryOff="@string/pref_acra_enabled"
+		        android:defaultValue="false"/>
+        
+<!-- <bfl.bfl.custompreferences.PickItCheckboxPreference
+			android:title="@string/pref.allowPickPreferenceWithSpinner.title"
+			android:key="@string/pref.include.spin.button.key"
+			android:defaultValue="@string/pref.allowPickPreferenceWithSpinner.default"
+			android:summary="@string/pref.allowPickPreferenceWithSpinner.summary"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+ -->		
+
+	<PreferenceCategory android:title="@string/pref.title.spinner.properties">
+
+
+
+		<bfl.bfl.custompreferences.ColorPickerPreference
+			android:title="@string/pref.BackgroundColor.title" android:key="@string/pref.BackgroundColor.key"
+			android:defaultValue="@string/pref.BackgroundColor.default"
+			android:summary="@string/pref.BackgroundColor.summary"
+			android:widgetLayout="@layout/colorpreference_swatch"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<!-- <bfl.bfl.custompreferences.ColorPreference android:title="@string/pref.BackgroundColor.title" 
+			android:key="@string/pref.BackgroundColor.key" android:defaultValue="@string/pref.BackgroundColor.default" 
+			android:summary="@string/pref.BackgroundColor.default" android:widgetLayout 
+			="@layout/colorpreference_swatch" /> -->
+		<bfl.bfl.custompreferences.ColorPickerPreference
+			android:title="@string/pref.Spinner.rimPaintColor.title" android:key="@string/pref.Spinner.rimPaintColor.key"
+			android:defaultValue="@string/pref.Spinner.rimPaintColor.default"
+			android:summary="@string/pref.Spinner.rimPaintColor.summary"
+			android:widgetLayout="@layout/colorpreference_swatch"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<bfl.bfl.custompreferences.ColorPickerPreference
+			android:title="@string/pref.Spinner.rimShadowColor.title"
+			android:key="@string/pref.Spinner.rimShadowColor.key"
+			android:defaultValue="@string/pref.Spinner.rimShadowColor.default"
+			android:summary="@string/pref.Spinner.rimShadowColor.summary"
+			android:widgetLayout="@layout/colorpreference_swatch"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+
+		<bfl.bfl.custompreferences.SeekBarPreference
+			android:key="@string/pref.Spinner_minimumNumberOfWedges.key"
+			android:title="@string/pref.Spinner_minimumNumberOfWedges.title"
+			android:summary="" android:dialogMessage="@string/pref.Spinner_minimumNumberOfWedges.title"
+			android:defaultValue="@string/pref.Spinner_minimumNumberOfWedges.default"
+			app:max="@string/pref.Spinner_minimumNumberOfWedges.max" app:min="@string/pref.Spinner_minimumNumberOfWedges.min"
+			app:summaryPrefix="@string/pref.current.value.is"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref.title.spinner.arrow.properties">
+
+		<bfl.bfl.custompreferences.ColorPickerPreference
+			android:title="@string/pref.spinner.arrow.Color.title" android:key="@string/pref.spinner.arrow.Color.key"
+			android:defaultValue="@string/pref.spinner.arrow.Color.default"
+			android:summary="@string/pref.spinner.arrow.Color.summary"
+			android:widgetLayout="@layout/colorpreference_swatch"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<bfl.bfl.custompreferences.SeekBarPreference
+			android:title="@string/pref.spinner.arrow.transparency.title"
+			android:key="@string/pref.spinner.arrow.transparency.key"
+			android:summary="" android:dialogMessage="@string/pref.spinner.arrow.transparency.message"
+			android:defaultValue="@string/pref.spinner.arrow.transparency.default"
+			app:text="%" android:dependency=""
+			app:max="@string/pref.spinner.arrow.transparency.max" app:min="@string/pref.spinner.arrow.transparency.min"
+			app:summaryPrefix="@string/pref.current.value.is"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+	</PreferenceCategory>
+
+
+	<PreferenceCategory android:title="@string/pref.title.VoiceRecognition">
+
+
+		<!-- <bfl.bfl.custompreferences.PickItCheckboxPreference
+			android:title="@string/pref.title.EnableVoiceRecognition"
+			android:key="@string/pref.EnableVoiceRecognition.key"
+			android:defaultValue="@string/pref.EnableVoiceRecognition.default"
+			android:summary="@string/pref.title.EnableVoiceRecognition.summary"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+ 		-->
+		<bfl.bfl.custompreferences.PickItCheckboxPreference
+			android:title="@string/pref.title.EnableQuickPickWord" android:key="@string/pref.EnableQuickPickWord.key"
+			android:defaultValue="@string/pref.EnableQuickPickWord.default"
+			android:dependency="@string/pref.EnableVoiceRecognition.key"
+			android:summary="@string/pref.title.EnableQuickPickWord.summary"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<bfl.bfl.custompreferences.PickItEditTextPreference
+			android:id="@+id/pref.quickPickWordEditText" android:title="@string/pref.title.QuickPickWord"
+			android:summary="@string/pref.summary.QuickPickWord" android:key="@string/pref.QuickPickWord.key"
+			android:defaultValue="@string/pref.QuickPickWord.default"
+			android:dependency="@string/pref.EnableQuickPickWord.key"
+			android:singleLine="true" app:includeSpinButton="@string/pref.include.spin.button" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Text-to-Speech">
+
+		<bfl.bfl.custompreferences.PickItCheckboxPreference
+			android:title="@string/pref.title.EnableSpeakText" android:key="@string/pref.EnableSpeakText.key"
+			android:defaultValue="@string/pref.EnableSpeakText.default"
+			android:summary="@string/pref.title.EnableSpeakText.summary"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		<bfl.bfl.custompreferences.SeekBarPreference
+			android:key="@string/pref.SpeechSpeed_One_Is_Normal.key"
+			android:title="@string/pref.title.SpeechSpeed_One_Is_Normal"
+			android:summary="" android:dialogMessage="@string/pref.title.SpeechSpeed_One_Is_Normal"
+			android:defaultValue="@string/pref.SpeechSpeed_One_Is_Normal.default"
+			app:text="%" android:dependency="@string/pref.EnableSpeakText.key"
+			app:max="@string/pref.SpeechSpeed_Max" app:min="@string/pref.SpeechSpeed_Min"
+			app:summaryPrefix="@string/pref.current.value.is"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+
+		<bfl.bfl.custompreferences.SeekBarPreference
+			android:key="@string/pref.SpeechPitch_One_Is_Normal.key"
+			android:title="@string/pref.title.SpeechPitch_One_Is_Normal"
+			android:summary="Current value is " android:dialogMessage="@string/pref.title.SpeechPitch_One_Is_Normal"
+			android:defaultValue="@string/pref.SpeechPitch_One_Is_Normal.default"
+			app:text="%" android:dependency="@string/pref.EnableSpeakText.key"
+			app:max="@string/pref.SpeechPitch_Max" app:min="@string/pref.SpeechPitch_Min"
+			app:summaryPrefix="@string/pref.current.value.is"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+
+
+		<!-- slider for volume, pitch,speed -->
+		<!-- <ListPreference android:title="List Preference" android:summary="This 
+			preference allows to select an item in a array" android:key="listPref" android:defaultValue="digiGreen" 
+			android:entries="@array/listArray" android:entryValues="@array/listValues" 
+			/> -->
+	</PreferenceCategory>
+	<!--  No messing with wedge transparency right now May 18, 2011 since I'm setting it from new wheel -->
+<!-- 	<PreferenceCategory android:title="@string/pref.spinner.wedge.title.NonPicked"> -->
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:title="@string/pref.spinner.wedge.transparencyForNonPicked.title" -->
+<!-- 			android:key="@string/pref.spinner.wedge.transparencyForNonPicked.key" -->
+<!-- 			android:summary="" -->
+<!-- 			android:dialogMessage="@string/pref.spinner.wedge.transparencyForNonPicked.message" -->
+<!-- 			android:defaultValue="@string/pref.spinner.wedge.transparencyForNonPicked.default" -->
+<!-- 			app:text="%" android:dependency="" -->
+<!-- 			app:max="@string/pref.spinner.wedge.transparencyForNonPicked.max" -->
+<!-- 			app:min="@string/pref.spinner.wedge.transparencyForNonPicked.min" -->
+<!-- 			app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+			
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:title="@string/pref.spinner.wedge.lightness.title" -->
+<!-- 			android:key="@string/pref.spinner.wedge.lightness.key" -->
+<!-- 			android:summary="" android:dialogMessage="@string/pref.spinner.wedge.lightness.message" -->
+<!-- 			android:defaultValue="@string/pref.spinner.wedge.lightness.default" -->
+<!-- 			app:text="%" android:dependency="" -->
+<!-- 			app:max="@string/pref.spinner.wedge.lightness.max" app:min="@string/pref.spinner.wedge.lightness.min" -->
+<!-- 			app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:title="@string/pref.spinner.wedge.saturation.title" -->
+<!-- 			android:key="@string/pref.spinner.wedge.saturation.key" -->
+<!-- 			android:summary="" android:dialogMessage="@string/pref.spinner.wedge.saturation.message" -->
+<!-- 			android:defaultValue="@string/pref.spinner.wedge.saturation.default" -->
+<!-- 			app:text="%" android:dependency="" -->
+<!-- 			app:max="@string/pref.spinner.wedge.saturation.max" app:min="@string/pref.spinner.wedge.saturation.min" -->
+<!-- 			app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+<!-- 	</PreferenceCategory> -->
+
+
+<!-- 	<PreferenceCategory android:title="@string/pref.spinner.wedge.title.Picked"> -->
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:title="@string/pref.spinner.wedge.transparencyForPicked.title" -->
+<!-- 			android:key="@string/pref.spinner.wedge.transparencyForPicked.key" -->
+<!-- 			android:summary="" -->
+<!-- 			android:dialogMessage="@string/pref.spinner.wedge.transparencyForPicked.message" -->
+<!-- 			android:defaultValue="@string/pref.spinner.wedge.transparencyForPicked.default" -->
+<!-- 			app:text="%" android:dependency="" -->
+<!-- 			app:max="@string/pref.spinner.wedge.transparencyForPicked.max" -->
+<!-- 			app:min="@string/pref.spinner.wedge.transparencyForPicked.min" -->
+<!-- 			app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:title="@string/pref.spinner.wedge.lightnessPicked.title" -->
+<!-- 			android:key="@string/pref.spinner.wedge.lightnessPicked.key" -->
+<!-- 			android:summary="" android:dialogMessage="@string/pref.spinner.wedge.lightnessPicked.message" -->
+<!-- 			android:defaultValue="@string/pref.spinner.wedge.lightnessPicked.default" -->
+<!-- 			app:text="%" android:dependency="" -->
+<!-- 			app:max="@string/pref.spinner.wedge.lightnessPicked.max" app:min="@string/pref.spinner.wedge.lightnessPicked.min" -->
+<!-- 			app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:title="@string/pref.spinner.wedge.saturationPicked.title" -->
+<!-- 			android:key="@string/pref.spinner.wedge.saturationPicked.key" -->
+<!-- 			android:summary="" android:dialogMessage="@string/pref.spinner.wedge.saturationPicked.message" -->
+<!-- 			android:defaultValue="@string/pref.spinner.wedge.saturationPicked.default" -->
+<!-- 			app:text="%" android:dependency="" -->
+<!-- 			app:max="@string/pref.spinner.wedge.saturationPicked.max" app:min="@string/pref.spinner.wedge.saturationPicked.min" -->
+<!-- 			app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+<!-- 	</PreferenceCategory> -->
+
+<PreferenceCategory android:title="@string/pref.title.other">
+
+		<bfl.bfl.custompreferences.SeekBarPreference
+			android:title="@string/pref.spinner.arrow.powerOfFingerSpin.title"
+			android:key="@string/pref.spinner.arrow.powerOfFingerSpin.key"
+			android:summary="" android:dialogMessage="@string/pref.spinner.arrow.powerOfFingerSpin.message"
+			android:defaultValue="@string/pref.spinner.arrow.powerOfFingerSpin.default"
+			app:text="%" android:dependency=""
+			app:max="@string/pref.spinner.arrow.powerOfFingerSpin.max" app:min="@string/pref.spinner.arrow.powerOfFingerSpin.min"
+			app:summaryPrefix="@string/pref.current.value.is"
+			app:includeSpinButton="@string/pref.include.spin.button" />
+
+		
+<!-- Always do animations for now May 6, 2011 -->
+<!-- 		<bfl.bfl.custompreferences.PickItCheckboxPreference -->
+<!-- 			android:title="@string/pref.DoAnimations.title" -->
+<!-- 			android:key="@string/pref.DoAnimations.key" -->
+<!-- 			android:defaultValue="@string/pref.DoAnimations.default" -->
+<!-- 			android:summary="@string/pref.DoAnimations.summary" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+
+<!-- 		<bfl.bfl.custompreferences.SeekBarPreference -->
+<!-- 			android:key="@string/pref.shake_threshold.key" android:title="@string/pref.title.shake_threshold" -->
+<!-- 			android:summary="@string/pref.summary.shake_threshold" -->
+<!-- 			android:dialogMessage="@string/pref.shake_threshold.message" -->
+<!-- 			android:defaultValue="@string/pref.shake_threshold.default" app:text="%" -->
+<!-- 			android:dependency="" app:max="@string/pref.shake_threshold.max" -->
+<!-- 			app:min="@string/pref.shake_threshold.min" app:summaryPrefix="@string/pref.current.value.is" -->
+<!-- 			app:includeSpinButton="@string/pref.include.spin.button" /> -->
+
+</PreferenceCategory> 
+
+</PreferenceScreen>

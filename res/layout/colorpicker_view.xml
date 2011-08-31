@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+ <include android:id="@+id/colorPickerView" 
+ 			android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				layout="@layout/colorpicker_colorpickerview"/>
+
+<RelativeLayout android:layout_below="@+id/colorPickerView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+ <include android:id="@+id/saveColorPick"
+				android:layout_alignParentRight="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				layout="@layout/colorpicker_savebutton"/>
+
+ <include android:id="@+id/cancelColorPick"
+				android:layout_alignParentLeft="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				layout="@layout/colorpicker_cancelbutton"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

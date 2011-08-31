@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/about"
+          android:icon="@drawable/ic_menu_info_details" 
+          android:title="@string/mnuAbout"/>
+    <item android:id="@+id/preferences"
+          android:title="@string/mnuSettings"
+          android:icon="@drawable/ic_menu_manage" 
+     />
+    <item android:id="@+id/addOption"
+          android:title="@string/mnuAddOption"
+          android:icon="@drawable/ic_menu_add" 
+    /> 
+    <item android:id="@+id/mnuWhatILastHeard"  
+          android:title="@string/mnuWhatILastHeard"
+    />
+</menu>
+<!-- android:icon="@drawable/stat_neutral" -->
+<!--    <item android:id="@+id/save"
+          android:title="Save"/>-->

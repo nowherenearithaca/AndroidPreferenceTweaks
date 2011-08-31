@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="setToThisColor">Set Color</string>
+
+
+	<string name="pref.title.resetValues">Reset Values</string>
+	<string name="pref.title.resetValues.summary">Reset all preferences back to their default value</string>
+
+	<string name="pref.current.value.is">"Current value is "</string>
+	<string name="pref.title.other">Other</string>
+	<string name="pref.resetAllPreferencesPreference.key">pref.resetAllPreferencesPreference.key</string>
+
+	<string name="pref.samplecheckbox.title">A Sample Checkbox</string>
+	<string name="pref.samplecheckbox.key">pref.samplecheckbox.key</string>
+	<string name="pref.samplecheckbox.summary">This is for a true/false preference of some kind
+	</string>
+	<string name="pref.samplecheckbox.default">true</string>
+
+
+	<string name="pref.samplecolorpicker.title">Color Preference</string>
+	<string name="pref.samplecolorpicker.key">pref.samplecolorpicker.key</string>
+	<string name="pref.samplecolorpicker.summary">Color of the something</string>
+	<string name="pref.samplecolorpicker.default">#FF00FF00</string>
+
+
+	<string name="pref.sampleseekbar.title">Value set with Seekbar</string>
+	<string name="pref.sampleseekbar.summary">Here is something set with a seekbar</string>
+	<string name="pref.sampleseekbar.key">pref.sampleseekbar.key</string>
+	<string name="pref.sampleseekbar.default">42</string>
+	<string name="pref.sampleseekbar.max">132</string>
+	<string name="pref.sampleseekbar.min">1</string>
+
+	<string name="pref.sampleedittext.title">Preference with Text</string>
+	<string name="pref.sampleedittext.key">pref.sampleedittext.key</string>
+	<string name="pref.sampleedittext.default">Default text</string>
+	<string name="pref.current.textvalue.is">"Current value is "</string>
+
+
+</resources>

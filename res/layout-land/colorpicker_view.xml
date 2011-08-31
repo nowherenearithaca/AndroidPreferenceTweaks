@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+<!-- 	android:background="@color/white" -->
+
+
+ <include android:id="@+id/colorPickerView" 
+ 			android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				layout="@layout/colorpicker_colorpickerview"/>
+
+
+<RelativeLayout android:layout_toRightOf="@+id/colorPickerView" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+<!-- Don't do this - makes parent be width of device android:layout_alignParentRight="true" -->
+
+ <include android:id="@+id/saveColorPick"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				layout="@layout/colorpicker_savebutton"/>
+
+ <include android:id="@+id/cancelColorPick"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				layout="@layout/colorpicker_cancelbutton"/>
+
+</RelativeLayout>
+
+<!--  <include android:id="@+id/cancelColorPick" -->
+<!--  			android:layout_toRightOf="@+id/colorPickerView" -->
+<!-- 				android:layout_width="wrap_content" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				layout="@layout/colorpicker_cancelbutton"/> -->
+
+<!-- <bfl.bfl.ColorPickerView -->
+<!-- 	    xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- 		android:id="@+id/colorPickerView"  -->
+<!-- 		android:layout_width="wrap_content" -->
+<!-- 		android:layout_height="wrap_content"   -->
+<!-- 		android:minHeight="100dip" -->
+<!-- 		android:minWidth="100dip" -->
+<!-- 		android:layout_alignParentLeft="true" -->
+<!-- 		android:layout_alignParentTop="true"/> -->
+
+<!-- 	<Button  -->
+<!-- 	    xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- 	    android:id="@+id/cancelColorPick"  -->
+<!-- 		android:layout_width="match_parent" -->
+<!-- 		android:layout_height="wrap_content"   -->
+<!-- 		android:text="@string/Cancel" -->
+<!-- 		android:textStyle="normal" -->
+<!-- 		android:minHeight="53dip" -->
+<!-- 		android:layout_below="@+id/colorPickerView"/>	 -->
+	
+<!-- 		android:layout_alignParentLeft="true" -->
+</RelativeLayout>

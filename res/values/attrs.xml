@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="summaryPrefix" format="string"/>
+     <declare-styleable name="SeekBarPreference">
+          <attr name="min" format="string" />
+          <attr name="max" format="string" />
+          <attr name="dialogMessage" format="string"/>
+          <attr name="text" format="string"/>
+          <attr name="defaultValue" format="string"/>
+          <attr name="summaryPrefix"/>
+     </declare-styleable>
+     <declare-styleable name="CustomEditTextPreference">
+          <attr name="summaryPrefix"/>
+     </declare-styleable>
+</resources>
