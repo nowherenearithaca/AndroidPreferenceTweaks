@@ -77,7 +77,7 @@ public class PreferencesApi4 extends PreferenceActivity implements
 		Editor editor = sharedPreferences.edit();
 		editor.clear().commit();
 
-		sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		//sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
 		// Log.d(TAG,"reloadDefaults - about to call setDefaultValues");
 		PreferenceManager.setDefaultValues(this, R.xml.preferences, readAgain);

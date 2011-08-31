@@ -20,7 +20,7 @@
 
 	<string name="pref.samplecolorpicker.title">Color Preference</string>
 	<string name="pref.samplecolorpicker.key">pref.samplecolorpicker.key</string>
-	<string name="pref.samplecolorpicker.summary">Color of the something</string>
+	<string name="pref.samplecolorpicker.summary">Color of something</string>
 	<string name="pref.samplecolorpicker.default">#FF00FF00</string>
 
 
